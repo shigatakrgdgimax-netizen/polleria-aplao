@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicaci&oacute;n y Horarios - Poller&iacute;a El Pollo Loko</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fuente moderna Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- CABECERA Y MENÚ DE NAVEGACIÓN -->
+    <header>
+        <div class="brand-container">
+            <i class="fa-solid fa-drumstick-bite brand-icon"></i>
+            <div class="brand-text">
+                <h1>El Pollo Loko</h1>
+                <p>&iexcl;El sabor que te vuelve loco!</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="especialidades.html">Especialidades</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html" class="active">Ubicaci&oacute;n y Horarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BANNER DE ENCABEZADO AMPLIO CON LA IMAGEN NÍTIDA -->
+    <section class="hero-mini" style="background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url('https://i.ibb.co/DfKYBhp6/Screenshot-4.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <span class="badge">&iexcl;Estamos Cerca de Ti!</span>
+            <h2>Vis&iacute;tanos o Haz tu Pedido</h2>
+            <p>Te esperamos en nuestro local en Aplao para disfrutar de la mejor experiencia gastron&oacute;mica o solicitar delivery.</p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PRINCIPAL DE CONTACTO Y UBICACIÓN -->
+    <section class="container">
+        
+        <!-- TARJETAS DE INFORMACIÓN PRIMORDIAL -->
+        <div class="contact-info-grid">
+            
+            <!-- Ubicación -->
+            <div class="contact-card">
+                <div class="contact-icon-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <h3>Ubicaci&oacute;n</h3>
+                <p>Av. Principal S/N (A media cuadra de la Plaza de Armas)</p>
+                <strong>Castilla - Aplao, Arequipa</strong>
+            </div>
+
+            <!-- Horarios -->
+            <div class="contact-card">
+                <div class="contact-icon-box">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <h3>Horarios de Atenci&oacute;n</h3>
+                <p><strong>Lunes a Domingo:</strong></p>
+                <p>12:00 PM - 10:30 PM</p>
+                <span class="sub-text">(Sal&oacute;n, Recojo y Delivery)</span>
+            </div>
+
+            <!-- Teléfonos / Pedidos -->
+            <div class="contact-card">
+                <div class="contact-icon-box">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <h3>Pedidos y Delivery</h3>
+                <p>Haz tus pedidos directos a nuestra l&iacute;nea de atenci&oacute;n:</p>
+                <p><strong>Central:</strong> +51 987 654 321</p>
+                <a href="https://wa.me/51987654321?text=Hola%20Poller%C3%ADa%20El%20Pollo%20Loko,%20quisiera%20hacer%20un%20pedido" target="_blank" class="btn-contact-wa">
+                    <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+
+        </div>
+
+        <!-- SECCIÓN DE MAPA Y FORMULARIO -->
+        <div class="map-form-grid">
+            
+            <!-- Mapa Interactivo Google Maps -->
+            <div class="map-container">
+                <h3><i class="fa-solid fa-map-location-dot"></i> Encu&eacute;ntranos en el Mapa</h3>
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15320.198305891395!2d-72.49382055!3d-16.0722105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9142f3604bc615bb%3A0xa1ea3c2eeecb42a9!2sAplao!5e0!3m2!1ses!2spe!4v1700000000000!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- Formulario de Mensaje Rápido -->
+            <div class="form-container">
+                <h3><i class="fa-solid fa-paper-plane"></i> &iexcl;Escr&iacute;benos un Mensaje!</h3>
+                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('&iexcl;Gracias por tu mensaje! Te responderemos muy pronto.');">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan P&eacute;rez" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Tel&eacute;fono / WhatsApp:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ej. 987654321" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje o Consulta:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="&iquest;Deseas reservar una mesa o consultar por un evento?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/51987654321?text=Hola%20Poller%C3%ADa%20El%20Pollo%20Loko,%20quisiera%20hacer%20un%20pedido" class="whatsapp-float" target="_blank" title="Pedir por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <footer>
+        <p>&copy; 2026 Poller&iacute;a El Pollo Loko - Castilla, Aplao</p>
+    </footer>
+
+</body>
+</html>
